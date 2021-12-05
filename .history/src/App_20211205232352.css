@@ -49,7 +49,7 @@ body{
 
 .button{
     height: 10vmin;
-    width: 25%;
+    width: 10vmin;
     background-color: green;
     color: white;
     text-align: center;
@@ -59,19 +59,7 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-
-    .price{
-        width: 90%;
-    }
-
-    .account-container{
-        width: 50%;
-    }
-
-    .account{
-        font-size: 4vmin;
-    }
+@media only screen and (min-width: 800px) {
 
     .button-container{
         flex-direction: column;

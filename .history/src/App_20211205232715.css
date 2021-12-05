@@ -49,7 +49,7 @@ body{
 
 .button{
     height: 10vmin;
-    width: 25%;
+    width: 10vmin;
     background-color: green;
     color: white;
     text-align: center;
@@ -67,10 +67,6 @@ body{
 
     .account-container{
         width: 50%;
-    }
-
-    .account{
-        font-size: 4vmin;
     }
 
     .button-container{
