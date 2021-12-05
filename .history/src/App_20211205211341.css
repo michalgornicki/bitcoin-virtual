@@ -1,0 +1,35 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price{
+    font-size: 8vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 50%;
+}
+
+.account{
+    font-size: 5vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 30%;
+}
+
+.button-container{
+    display: flex;
+    just
+}
+
+.button{
+    height: 10vmin;
+    width: 10vmin;
+    background-color: green;
+    display: block;
+    margin: auto;
+    margin-top: 10vmin;
+}

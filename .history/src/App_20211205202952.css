@@ -1,0 +1,12 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.price{
+    font-size: 8vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 30%;
+}

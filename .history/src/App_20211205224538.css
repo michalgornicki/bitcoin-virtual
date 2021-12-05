@@ -1,0 +1,52 @@
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.price{
+    font-size: 8vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 50%;
+    color: rgb(160, 160, 160);
+}
+
+.account-container{
+    display: block;
+    margin: auto;
+    margin-top: 10vmin;
+    margin-bottom: 5vmin;
+    background: linear-gradient(rgb(25, 67, 255), rgb(79, 155, 255));
+    color: white;
+    padding: 2vmin;
+    border-radius: 5vmin;
+    width: 18%;
+}
+
+.account{
+    font-size: 4vmin;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    height: 10vmin;
+    width: 10vmin;
+    background-color: green;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 2vmin;
+    margin-top: 10vmin;
+    cursor: pointer;
+}
+

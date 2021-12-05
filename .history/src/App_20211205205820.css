@@ -1,0 +1,21 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price{
+    font-size: 8vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 30%;
+}
+
+.account{
+    font-size: 8vmin;
+    display: block;
+    margin: auto;
+    margin-top: 15vmin;
+    text-align: center;
+    width: 30%;
+}
