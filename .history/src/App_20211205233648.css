@@ -7,7 +7,8 @@ body{
 .wrapper{
     display: block;
     margin: auto;
-    background: linear-gradient(to bottom, rgb(30, 79, 146), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(3, 24, 54), rgb(28, 83, 155));
+
     height: 100vh;
 }
 
@@ -20,10 +21,10 @@ body{
     padding-bottom: 3vmin;
     text-align: center;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 189, 67);
     background: linear-gradient(to left, rgb(0, 43, 107), rgb(53, 110, 185));
     box-shadow: 0px 0px 30px black;
-    text-shadow: 0px 0px 20px black;
+
 }
 
 .account-container{
@@ -31,12 +32,11 @@ body{
     margin: auto;
     margin-top: 10vmin;
     margin-bottom: 5vmin;
-    background: linear-gradient(to bottom right, rgb(50, 122, 216), rgb(91, 4, 126));
+    background: linear-gradient(to left, rgb(0, 43, 107), rgb(53, 110, 185));
     color: white;
     padding: 2vmin;
     border-radius: 3vmin;
     width: 14%;
-    box-shadow: 0px 0px 5px black;
 }
 
 .account{

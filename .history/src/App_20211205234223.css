@@ -20,7 +20,7 @@ body{
     padding-bottom: 3vmin;
     text-align: center;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 196, 0);
     background: linear-gradient(to left, rgb(0, 43, 107), rgb(53, 110, 185));
     box-shadow: 0px 0px 30px black;
     text-shadow: 0px 0px 20px black;
@@ -31,12 +31,11 @@ body{
     margin: auto;
     margin-top: 10vmin;
     margin-bottom: 5vmin;
-    background: linear-gradient(to bottom right, rgb(50, 122, 216), rgb(91, 4, 126));
+    background: linear-gradient(to bottom, rgb(31, 70, 121), rgb(25, 73, 134));
     color: white;
     padding: 2vmin;
     border-radius: 3vmin;
     width: 14%;
-    box-shadow: 0px 0px 5px black;
 }
 
 .account{

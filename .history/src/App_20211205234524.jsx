@@ -91,7 +91,7 @@ function App() {
         <Button variant="secondary m-1 btn-lg " onClick={sellBitcoin}>
           Sell 0.1 BTC
         </Button>
-        <Button variant="secondary m-1 btn-lg " onClick={sellMAXBitcoin}>
+        <Button variant="primary m-1 btn-lg " onClick={sellMAXBitcoin}>
           Sell MAX BTC
         </Button>
       </div>
