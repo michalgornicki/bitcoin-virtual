@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Bitcoin from "./bitcoin.png";
-import Wallet from "./money.png";
-
-
 
 function App() {
   const [bitcoinPrice, setBitcoinPrice] = useState(5000);
@@ -77,13 +73,12 @@ function App() {
 
 
       <div className="price">
-        <img className="icon" src={Bitcoin} alt=""/>
         1 BTC = {bitcoinPrice}{" "} PLN
         <div className="percent" style={{ color: bitcoinPrice > 5000 ? 'rgb(9, 255, 0)' : 'rgb(255, 39, 39)' }}> {percentValue()} </div>
       </div>
 
 
-      <div className="button-container w-50">
+      <div className="button-container w-50 m-auto ">
         <Button variant="primary m-1 btn-lg " onClick={buyBitcoin}>
           Buy BTC for 1000 PLN
         </Button>
@@ -99,7 +94,6 @@ function App() {
       </div>
 
       <div className="account-container">
-      <img className="icon-wallet" src={Wallet} alt=""/>
         <div className="account">TOTAL BALANCE:</div>
         <div className="account">{accountPLN} PLN</div>
         <div className="account">{accountBTC} BTC</div>

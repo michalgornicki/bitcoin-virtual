@@ -20,6 +20,7 @@ body{
     padding-bottom: 3vmin;
     text-align: center;
     width: 100%;
+    height: 10vmin;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, rgb(0, 43, 107), rgb(53, 110, 185));
     box-shadow: 0px 0px 30px black;
@@ -72,18 +73,7 @@ body{
 
 
 .icon{
-    position: relative;
-    height: 6vmin;
-    margin-right: 2vmin;
-    margin-bottom: 1vmin;
-}
-
-.icon-wallet{
-    display: block;
-    position: relative;
-    height: 6vmin;
-    margin: auto;
-    margin-bottom: 2vmin;
+    height: 100%;
 }
 
 @media only screen and (max-width: 800px) {

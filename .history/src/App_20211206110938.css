@@ -83,7 +83,7 @@ body{
     position: relative;
     height: 6vmin;
     margin: auto;
-    margin-bottom: 2vmin;
+    margin-bottom: ;
 }
 
 @media only screen and (max-width: 800px) {

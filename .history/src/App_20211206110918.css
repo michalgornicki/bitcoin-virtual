@@ -79,11 +79,10 @@ body{
 }
 
 .icon-wallet{
-    display: block;
     position: relative;
     height: 6vmin;
-    margin: auto;
-    margin-bottom: 2vmin;
+    margin-right: 2vmin;
+    margin-bottom: 1vmin;
 }
 
 @media only screen and (max-width: 800px) {

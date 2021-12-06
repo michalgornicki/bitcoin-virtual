@@ -99,7 +99,8 @@ function App() {
       </div>
 
       <div className="account-container">
-      <img className="icon-wallet" src={Wallet} alt=""/>
+      <img className="icon" src={Bitcoin} alt=""/>
+
         <div className="account">TOTAL BALANCE:</div>
         <div className="account">{accountPLN} PLN</div>
         <div className="account">{accountBTC} BTC</div>

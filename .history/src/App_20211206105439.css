@@ -55,7 +55,7 @@ body{
 .button-container{
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin-a
     margin-top: 10vmin;
 }
 
@@ -68,22 +68,6 @@ body{
     display: block;
     margin: 2vmin;
     cursor: pointer;
-}
-
-
-.icon{
-    position: relative;
-    height: 6vmin;
-    margin-right: 2vmin;
-    margin-bottom: 1vmin;
-}
-
-.icon-wallet{
-    display: block;
-    position: relative;
-    height: 6vmin;
-    margin: auto;
-    margin-bottom: 2vmin;
 }
 
 @media only screen and (max-width: 800px) {
