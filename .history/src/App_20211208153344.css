@@ -61,7 +61,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 5vmin;
+  margin-top: 10vmin;
 }
 
 .button-container-inner {
@@ -102,10 +102,6 @@ body {
 
   .button-container {
     flex-direction: column;
-  }
-
-  .button-container-inner{
-      width: 98%;
   }
 
   .button {

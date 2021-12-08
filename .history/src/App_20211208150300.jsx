@@ -3,8 +3,9 @@ import "./App.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Bitcoin from "./bitcoin.png";
-import Ethereum from "./ethereum.png";
 import Wallet from "./money.png";
+
+
 
 function App() {
   const [bitcoinPrice, setBitcoinPrice] = useState(5000);
@@ -27,22 +28,25 @@ function App() {
   };
 
   const ethereum = () => {
-    let randomNumber = parseFloat((Math.random() * 5 - 2.5).toFixed(3));
-    setEthereumPrice((ethereumPrice) =>
+    let randomNumber = parseFloat((Math.random() * 20 - 10).toFixed(3));
+    setBitcoinPrice((ethereumPrice) =>
       parseFloat((ethereumPrice + randomNumber).toFixed(3))
     );
     setTimeout(ethereum, 1000);
   };
 
-  let percentValue = () =>
+
+  let percentValue = () => 
     "(" +
     parseFloat((((bitcoinPrice - 5000) / bitcoinPrice) * 100).toFixed(2)) +
     "%)";
 
-  let percentValueEth = () =>
+    let percentValueEth = () => 
     "(" +
-    parseFloat((((ethereumPrice - 300) / ethereumPrice) * 100).toFixed(2)) +
+    parseFloat((((ethereumPrice - 5000) / ethereumPrice) * 100).toFixed(2)) +
     "%)";
+
+
 
   const buyBitcoin = () => {
     if (accountPLN >= 1000) {
@@ -106,9 +110,9 @@ function App() {
   };
 
   const sellEthereum = () => {
-    if (accountETH >= 0.5) {
-      setAccountPLN(parseFloat((accountPLN + ethereumPrice / 2).toFixed(6)));
-      setAccountETH((accountETH) => parseFloat((accountETH - 0.5).toFixed(6)));
+    if (accountETH >= 0.1) {
+      setAccountPLN(parseFloat((accountPLN + ethereumPrice / 10).toFixed(6)));
+      setAccountETH((accountETH) => parseFloat((accountETH - 0.1).toFixed(6)));
     } else {
       setAccountPLN(
         parseFloat((accountPLN + ethereumPrice * accountETH).toFixed(6))
@@ -126,54 +130,34 @@ function App() {
 
   return (
     <div className="wrapper">
+
+
       <div className="price">
-        <div className="price-item">
-          <img className="icon" src={Bitcoin} alt="" />1 BTC = {bitcoinPrice}{" "}
-          PLN
-          <div
-            className="percent"
-            style={{
-              color:
-                bitcoinPrice > 5000 ? "rgb(9, 255, 0)" : "rgb(255, 39, 39)",
-            }}
-          >
-            {" "}
-            {percentValue()}{" "}
-          </div>
-        </div>
-        <div className="price-item">
-          <img className="icon" src={Ethereum} alt="" />1 ETH = {ethereumPrice}{" "}
-          PLN
-          <div
-            className="percent"
-            style={{
-              color:
-                ethereumPrice > 300 ? "rgb(9, 255, 0)" : "rgb(255, 39, 39)",
-            }}
-          >
-            {" "}
-            {percentValueEth()}{" "}
-          </div>
-        </div>
+        <img className="icon" src={Bitcoin} alt=""/>
+        1 BTC = {bitcoinPrice}{" "} PLN
+        <div className="percent" style={{ color: bitcoinPrice > 5000 ? 'rgb(9, 255, 0)' : 'rgb(255, 39, 39)' }}> {percentValue()} </div>
       </div>
 
-      <div className="button-container">
-        <div className="button-container-inner">
-        <Button variant="primary m-1 btn-lg" onClick={buyBitcoin}>
+      <div className="price">
+        <img className="icon" src={Ethereum} alt=""/>
+        1 BTC = {ethereumPrice}{" "} PLN
+        <div className="percent" style={{ color: ethereumPrice > 300 ? 'rgb(9, 255, 0)' : 'rgb(255, 39, 39)' }}> {percentValueEth()} </div>
+      </div>
+
+
+      <div className="button-container w-50">
+        <Button variant="primary m-1 btn-lg " onClick={buyBitcoin}>
           Buy BTC for 1000 PLN
         </Button>
-        <Button variant="primary m-1 btn-lg" onClick={buyMAXBitcoin}>
-        Buy BTC for MAX PLN
+        <Button variant="primary m-1 btn-lg " onClick={buyMAXBitcoin}>
+          Buy BTC for MAX PLN
         </Button>
-        <Button variant="secondary m-1 btn-lg" onClick={sellBitcoin}>
+        <Button variant="secondary m-1 btn-lg " onClick={sellBitcoin}>
           Sell 0.1 BTC
         </Button>
-        <Button variant="secondary m-1 btn-lg" onClick={sellMAXBitcoin}>
+        <Button variant="secondary m-1 btn-lg " onClick={sellMAXBitcoin}>
           Sell MAX BTC
         </Button>
-        </div>
-        <div className="button-container-inner">
-
         <Button variant="primary m-1 btn-lg " onClick={buyEthereum}>
           Buy ETH for 1000 PLN
         </Button>
@@ -181,22 +165,22 @@ function App() {
           Buy ETH for MAX PLN
         </Button>
         <Button variant="secondary m-1 btn-lg " onClick={sellEthereum}>
-          Sell 0.5 ETH
+          Sell 0.1 ETH
         </Button>
         <Button variant="secondary m-1 btn-lg " onClick={sellMAXEthereum}>
           Sell MAX ETH
         </Button>
-        </div>
-
       </div>
 
       <div className="account-container">
-        <img className="icon-wallet" src={Wallet} alt="" />
+      <img className="icon-wallet" src={Wallet} alt=""/>
         <div className="account">TOTAL BALANCE:</div>
         <div className="account">{accountPLN} PLN</div>
         <div className="account">{accountBTC} BTC</div>
         <div className="account">{accountETH} ETH</div>
       </div>
+
+
     </div>
   );
 }

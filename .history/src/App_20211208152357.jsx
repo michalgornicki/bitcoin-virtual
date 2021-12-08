@@ -106,9 +106,9 @@ function App() {
   };
 
   const sellEthereum = () => {
-    if (accountETH >= 0.5) {
-      setAccountPLN(parseFloat((accountPLN + ethereumPrice / 2).toFixed(6)));
-      setAccountETH((accountETH) => parseFloat((accountETH - 0.5).toFixed(6)));
+    if (accountETH >= 0.1) {
+      setAccountPLN(parseFloat((accountPLN + ethereumPrice / 10).toFixed(6)));
+      setAccountETH((accountETH) => parseFloat((accountETH - 0.1).toFixed(6)));
     } else {
       setAccountPLN(
         parseFloat((accountPLN + ethereumPrice * accountETH).toFixed(6))
@@ -142,7 +142,7 @@ function App() {
           </div>
         </div>
         <div className="price-item">
-          <img className="icon" src={Ethereum} alt="" />1 ETH = {ethereumPrice}{" "}
+          <img className="icon" src={BitcEtheoin} alt="" />1 ETH = {ethereumPrice}{" "}
           PLN
           <div
             className="percent"
@@ -181,7 +181,7 @@ function App() {
           Buy ETH for MAX PLN
         </Button>
         <Button variant="secondary m-1 btn-lg " onClick={sellEthereum}>
-          Sell 0.5 ETH
+          Sell 0.1 ETH
         </Button>
         <Button variant="secondary m-1 btn-lg " onClick={sellMAXEthereum}>
           Sell MAX ETH

@@ -159,10 +159,10 @@ function App() {
 
       <div className="button-container">
         <div className="button-container-inner">
-        <Button variant="primary m-1 btn-lg" onClick={buyBitcoin}>
+        <Button variant="primary m-1 btn-lg w-25" onClick={buyBitcoin}>
           Buy BTC for 1000 PLN
         </Button>
-        <Button variant="primary m-1 btn-lg" onClick={buyMAXBitcoin}>
+        <Button variant="primary m-1 btn-lg w-25" onClick={buyMAXBitcoin}>
         Buy BTC for MAX PLN
         </Button>
         <Button variant="secondary m-1 btn-lg" onClick={sellBitcoin}>

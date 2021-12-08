@@ -11,7 +11,7 @@ body {
 }
 
 .price {
-  font-size: 5vmin;
+  font-size: 6vmin;
   font-weight: 600;
   display: block;
   margin: auto;
@@ -61,16 +61,24 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 5vmin;
+  margin-top: 10vmin;
 }
 
 .button-container-inner {
-    width: 40%;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin: auto;
 }
 
+.button {
+  height: 10vmin;
+  width: 25%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 2vmin;
+  cursor: pointer;
+}
 
 .icon {
   position: relative;
@@ -102,10 +110,6 @@ body {
 
   .button-container {
     flex-direction: column;
-  }
-
-  .button-container-inner{
-      width: 98%;
   }
 
   .button {

@@ -104,10 +104,6 @@ body {
     flex-direction: column;
   }
 
-  .button-container-inner{
-      width: 98%;
-  }
-
   .button {
     width: 100% !important;
   }
